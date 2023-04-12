@@ -1,0 +1,24 @@
+@import "./mixins";
+
+body{
+    h1{
+        color: red;
+        text-align: center;
+        
+        @include for-phone{
+            color: green;
+        }
+        @include for-tablet{
+            color: blue;
+        }
+        @include for-laptop{
+            color: hotpink;
+        }
+        @include for-large-desktop{
+            color: aqua;
+        }
+        @include for-xxl-large-desktop{
+            color: orange;
+        }
+    }
+}
